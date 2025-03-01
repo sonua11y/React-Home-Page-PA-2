@@ -14,9 +14,19 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
     console.log("Customer Details:", formData);
     alert("Form submitted successfully!");
+  
+    setFormData({
+      name: "",
+      contact: "",
+      email: "",
+    });
   };
+  
+
+
 
   return (
     <div className="container">
@@ -59,3 +69,15 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
